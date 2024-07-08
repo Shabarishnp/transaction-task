@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_postman_id": "5e5b8c94-5f05-415a-beca-86ee48effd20",
+    "name": "Transactions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29524057"
+  },
+  "item": [
+    {
+      "name": "Fetches data from an external source and store data.",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions/initialize",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions", "initialize"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transactions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions?search=backpack",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions"],
+          "query": [
+            {
+              "key": "search",
+              "value": "backpack"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "statistics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions/statistics?month=January",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions", "statistics"],
+          "query": [
+            {
+              "key": "month",
+              "value": "January"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "barChart",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions/statistics?month=January/bar-chart",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions", "statistics"],
+          "query": [
+            {
+              "key": "month",
+              "value": "January/pie-chart"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "pieChart",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions/statistics?month=January/pie-chart",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions", "statistics"],
+          "query": [
+            {
+              "key": "month",
+              "value": "January/pie-chart"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "combinedData",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/transactions/combined-data?month=January",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "transactions", "combined-data"],
+          "query": [
+            {
+              "key": "month",
+              "value": "January"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
